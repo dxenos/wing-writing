@@ -39,7 +39,7 @@ jobs:
         env:
           JEKYLL_ENV: production
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2.2.0
+        uses: actions/upload-pages-artifact@v2.1.1
 
   deploy:
     environment:
