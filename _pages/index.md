@@ -5,15 +5,11 @@ id: home
 permalink: /
 ---
 
-# Welcome! 🌱
+# What is all about
 
-<p class="callout">
-  Take a look at <span style="font-weight: bold">[[Your first note]]</span> to get started on your exploration.
-</p>
+<img src="{{ site.baseurl }}/assets/cat_attack.webp" alt="Cat" style="width: 30%; display: block; margin-left: 0; margin-right: auto;">
 
-This digital garden template is free, open-source, and [available on GitHub here](https://github.com/maximevaillancourt/digital-garden-jekyll-template).
-
-The easiest way to get started is to read this [step-by-step guide explaining how to set this up from scratch](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).
+This place is dedicated to practical learnings of Wing Chun. 
 
 <strong>Recently updated notes</strong>
 
@@ -31,3 +27,5 @@ The easiest way to get started is to read this [step-by-step guide explaining ho
     max-width: 46em;
   }
 </style>
+
+
