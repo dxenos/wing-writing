@@ -79,6 +79,7 @@ GEM
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    logger (1.6.6)
     mercenary (0.4.0)
     nokogiri (1.18.3-aarch64-linux-gnu)
       racc (~> 1.4)
@@ -145,6 +146,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.4)
   jekyll-last-modified-at!
+  logger
   nokogiri
   webrick (~> 1.9)
 

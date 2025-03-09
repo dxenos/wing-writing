@@ -1,0 +1,176 @@
+/* ================================
+   1. Global Dark Mode Overrides
+   ================================ */
+
+/* Unify entire background & text */
+body,
+.wrapper {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+  border: none !important;
+}
+
+/* Remove or override inline light backgrounds on paragraphs */
+p[style] {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+}
+
+/* List items inherit dark background */
+ul li {
+  background: transparent;
+  color: inherit;
+}
+
+/* Global link styling */
+a,
+a:visited,
+a[style] {
+  color: #bb86fc !important;
+  background: transparent !important;
+}
+
+/* Specific styling for internal links */
+a.internal-link {
+  color: #bb86fc;
+}
+
+/* ================================
+   2. Link Preview Pop-ups
+   ================================ */
+
+/* Dark mode for the pop-up container */
+.internal-link-preview {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+  border: 1px solid #444 !important;
+}
+
+/* All children within pop-ups inherit dark mode */
+.internal-link-preview * {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+/* Links inside previews (if needed) */
+.internal-link-preview a {
+  color: #bb86fc !important;
+}
+
+/* Tooltip wrapper (another pop-up container) */
+#tooltip-wrapper,
+#tooltip-wrapper:after {
+  background: #1e1e1e !important;
+  border: 1px solid #444 !important;
+}
+
+#tooltip-wrapper:after {
+  background-image: linear-gradient(to bottom, rgba(30,30,30,0), rgba(30,30,30,1) 90%) !important;
+}
+
+/* All text inside #tooltip-wrapper is dark-themed */
+#tooltip-wrapper,
+#tooltip-wrapper * {
+  color: #e0e0e0 !important;
+}
+
+/* ================================
+   3. Backlink & Notes Boxes
+   ================================ */
+
+.backlink-box {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+  border: 1px solid #444 !important;
+}
+
+.backlink-box a {
+  color: #bb86fc !important;
+  background: transparent !important;
+}
+
+/* Example for a notes-mentioning section */
+.notes-mentioning-this-note,
+.notes-mentioning-this-note * {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+  border: 1px solid #444 !important; 
+}
+
+.notes-mentioning-this-note a {
+  background: transparent !important;
+  color: #bb86fc !important;
+}
+
+/* ================================
+   4. Highlights & Marked Text
+   ================================ */
+
+/* Renamed from '.highlight, mark' to avoid conflict with Jekyll code blocks */
+.text-highlight,
+mark {
+  background-color: #444 !important;
+  color: #e0e0e0 !important;
+}
+
+/* ================================
+   5. Blockquotes & Invalid Links
+   ================================ */
+
+/* Dark blockquotes with a left border */
+blockquote {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+  border-left: 4px solid #444 !important;
+  padding: 1em !important;
+  margin: 1em 0 !important;
+}
+
+blockquote * {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+/* Invalid link classes */
+.invalid-link,
+.invalid-link-brackets {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+  border: 1px solid #444 !important;
+  padding: 0.1em 0.3em !important;
+  border-radius: 4px !important;
+}
+
+/* ================================
+   6. Code & Syntax Highlighting
+   ================================ */
+
+/* Force a single dark background for all code elements */
+.highlight,
+.highlight *,
+.language-plaintext.highlighter-rouge,
+.language-plaintext.highlighter-rouge *,
+code,
+pre {
+  background-color: #1e1e1e !important;
+  color: #e0e0e0 !important;
+  border: none !important;
+}
+
+/* Provide a subtle border/padding for code blocks and inline code */
+.highlight code,
+.highlight pre,
+.language-plaintext.highlighter-rouge code,
+.language-plaintext.highlighter-rouge pre,
+code,
+pre {
+  border: 1px solid #444 !important;
+  padding: 0.2em 0.4em !important;
+  border-radius: 4px !important;
+}
+
+/* Comments in syntax highlighting (e.g., .c1 class) */
+.c1 {
+  color: #999 !important; /* or any color you prefer for comments */
+  background: transparent !important;
+}
