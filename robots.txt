@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /vendor/
+# Add more Disallow rules if there are folders you don't want crawled
+
+Sitemap: https://eternalwingchun.com/sitemap.xml 
