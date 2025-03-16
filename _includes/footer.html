@@ -1,25 +1,5 @@
 See <a class="internal-link" href="{{ site.baseurl }}/about">About</a> page. 
 
 <span style="margin-left: 10px; margin-right: 10px;">|</span> 
-<a href="#" id="open-newsletter" style="text-decoration: underline;">Subscribe to newsletter</a>
-
-<script>
-  document.getElementById('open-newsletter').addEventListener('click', function(e) {
-    e.preventDefault();
-    
-    // Try to find and click the Mailchimp popup trigger
-    var mailchimpPopup = document.querySelector('.mc-modal');
-    if (mailchimpPopup) {
-      // If the popup exists but is hidden, we need to make it visible
-      mailchimpPopup.style.display = 'block';
-    } else {
-      // If we can't find the popup, try to reload the Mailchimp script
-      var script = document.createElement('script');
-      script.src = "https://chimpstatic.com/mcjs-connected/js/users/1bbbad1fc7824b4362879e283/66781ec6d0100ca4fa583781a.js";
-      document.head.appendChild(script);
-      
-      // Alert the user that the popup should appear shortly
-      alert("Newsletter signup form will appear shortly. If it doesn't, please refresh the page.");
-    }
-  });
-</script>
+<!-- Replace the URL below with your actual Mailchimp signup form URL (should look like https://eepurl.com/XXXXX) -->
+<a href="http://eepurl.com/jadImU" target="_blank" style="text-decoration: underline;">Subscribe to newsletter</a>
